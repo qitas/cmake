@@ -1,7 +1,47 @@
-## OS-Q.com
+# CMake
 
-- 这是个关于OS总结的工程，Q1代表最低端的8051内核、stm8内核的实时系统OS
+[中文](README_zh.md)
 
-项目组成包括：8051内核的RTX-51系统，和STM8 的uCOS2系统
+This is a CMake framework for GCC compilation.
 
-Q1项目针对最低端的处理器平台进行相关系统调度，至于是否需要在低端平台上添加系统就见仁见智了。 
+## Support features
+
+- Single project compilation
+- Multi projects compilation at the same time
+- Support menuconfig
+- Support compile project in everywhere
+- Support x86、arm、risc-v GCC toolchain
+- Support all platform ：windows、linux、macOS
+
+## Compile demo
+
+- Compile two demos separately
+
+```
+cd examples/helloworld
+make
+
+
+cd examples/blink
+make
+```
+
+- Compile two demos at the same time
+
+```
+cd examples
+make
+```
+
+## Use menuconfig
+
+Currently just let **menuconfig** work, the rest is some user's **kconfig**  codes.
+
+```
+cd examples/helloworld
+make menuconfig
+
+
+cd examples/blink
+make menuconfig
+```

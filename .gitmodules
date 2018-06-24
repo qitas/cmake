@@ -1,6 +1,0 @@
-[submodule "8051"]
-	path = 8051
-	url = https://github.com/Qitas/RTX51.git
-[submodule "stm8"]
-	path = stm8
-	url = https://github.com/Qitas/ucos4stm8.git
